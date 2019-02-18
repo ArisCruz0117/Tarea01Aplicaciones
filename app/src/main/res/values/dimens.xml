@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name ="activity_main_padding_vertical">10dp</dimen>
+    <dimen name ="activity_main_padding_objetos">5dp</dimen>
+
+
+</resources>

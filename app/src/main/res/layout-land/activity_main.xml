@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main_scrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_main_padding_horizontal"
+    tools:context=".ActivityMain"
+    android:background="@color/colorGray">
+
+    <EditText
+        android:id="@+id/activity_linear_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/main_hint_nombre"
+        android:backgroundTint="@color/colorPink"/>
+
+    <EditText
+        android:id="@+id/activity_linear_telefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/main_hint_telefono"
+        android:inputType="phone"/>
+
+    <TextView
+        android:id="@+id/activity_linear_escolaridad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/main_text_escolaridad"
+        android:textColor="@color/colorBlack"
+        android:padding="@dimen/activity_main_padding_objetos"/>
+
+    <Spinner
+        android:id="@+id/activity_linear_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/escolaridad"
+        android:padding="@dimen/activity_main_padding_objetos">
+    </Spinner>
+    
+    <TextView
+        android:id="@+id/activity_linear_genero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/main_text_genero"
+        android:textColor="@color/colorBlack"
+        android:padding="@dimen/activity_main_padding_objetos"/>
+
+    <RadioGroup
+        android:id="@+id/activity_linear_radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/activity_linear_femenino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_text_fem"
+            android:checked="true"
+            android:padding="@dimen/activity_main_padding_objetos"/>
+
+        <RadioButton
+            android:id="@+id/activity_linear_masculino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_text_masc"
+            android:checked="false"
+            android:padding="@dimen/activity_main_padding_objetos"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/activity_linear_librofav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/main_text_librofav"
+        android:textColor="@color/colorBlack"
+        android:padding="@dimen/activity_main_padding_objetos"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/activity_linear_AutoCompleteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_main_padding_objetos"/>
+
+    <CheckBox
+        android:id="@+id/activity_linear_deporteBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="@string/main_text_deporte"
+        android:padding="@dimen/activity_main_padding_objetos"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/activity_relative_limpiar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/main_text_limpiar"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</LinearLayout>
+
+</ScrollView>
